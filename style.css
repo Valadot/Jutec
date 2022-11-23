@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    width: 100vw;
     box-sizing: border-box;
     font-family: 'Cuprum', sans-serif;
 }
@@ -30,6 +31,7 @@ ul {
 .hero {
     display: flex;
     margin-top: 5rem;
+    justify-content: center;
 }
 
 .product-pic {
@@ -62,12 +64,9 @@ span {
 
 .order-details,
 form{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 0.8rem; 
-    width: 300px;
-    place-items: flex-start;
-    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 
 }
 label {
@@ -77,7 +76,9 @@ label {
 
 input {
     padding: 0.1rem;
+    padding-left: 10px;
     width: 100px;
+    height: 30px;
     border-radius: 10px;
     box-shadow: 1px 2px 5px gray;
     border-style: none;
@@ -88,12 +89,15 @@ select {
     border-style: none;
     box-shadow: 1px 2px 5px gray;
     font-family: 'Lato', sans-serif;
+    height: 30px;
 }
 
 button {
     border-style: none;
-    padding: 0.3rem 1rem;
+    padding: 0.5rem 1rem;
     border-radius: 10px;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
     background-color: lightgreen;
     font-family: 'Cuprum', sans-serif;
 }
