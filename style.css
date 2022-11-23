@@ -63,6 +63,11 @@ span {
     bottom: 100%;
 }
 
+.length-cm {
+    position: absolute;
+    top: 20%;
+}
+
 .order-details,
 form{
     display: flex;
