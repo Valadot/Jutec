@@ -1,2 +1,2 @@
 # Jutec
- Jutec test
+ Jutec

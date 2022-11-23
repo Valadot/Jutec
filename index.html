@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cuprum&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#"><img class="logo" src="logo.png" alt="Logo of jutec"></a></li>
+            <li class="push-left">Home</li>
+            <li>Produkte</li>
+            <li>Online-shop</li>
+        </ul>
+    </header>
+    <div class="article-description">
+        <h1 class="partdesc">Gewebe 1 mit XXX Schutz</h1>
+    </div>
+    <div class="hero">
+        <div class="product-pic">
+            <p class="width-cm"></p>
+            <img class="product-img" src="1.jpg" alt=""> <span class="length-cm"></span>
+        </div>
+        <div class="order-details">
+            <form onsubmit="return false">
+                <label for="article">Artikel</label>
+                <select class="auswahl" name="article" id="article">
+                    <option class="gewebe1" value="gewebe-1">Gewebe 1</option>
+                <option class="gewebe2" value="gewebe-2">Gewebe 2</option>
+                <option class="gewebe3" value="gewebe-3">Gewebe 3</option>
+                <option class="gewebe4" value="gewebe-4">Gewebe 4</option>
+                </select>
+                <label for="oesen">Ösen</label>
+                <input type="text" id="oesen" name="oesen_anzahl">
+                <label for="breite">Breite cm</label>
+                <input type="number" id="breite" name="breite_width" min=100 max=5000 required>
+                <label for="lnge">Länge cm</label>
+                <input type="number" id="länge" name="länge_length" min=100 max=5000 required>
+                <label for="preis">Preis</label>
+                <input type="text" id="preis" name="preis_price" disabled>
+                <button  class="berechnen">Berechnen!</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
